@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="h-min">
+    <header class="flex justify-center">
+        <h1 class="text-4xl ml-16 text-lime-600 font-bold mt-3">Money Master</h1>
+        <div>
+            <img class="w-3/12 " src="images/images-removebg-preview.png" alt="">
+        </div>
+    </header>
+
+    <main class="container mx-auto ">
+       <section class="grid md:grid-cols-1 lg:grid-cols-2 p-12">
+        <div class="bg-[#E5E5E5] mx-auto">
+            <img class="h-full rounded-xl" src="images/money.jpg" alt="">
+        </div>
+
+        <div class="mx-auto">
+            <h1 class="text-3xl font-bold  text-pink-900 mx-16">INCOME</h1>
+            <!-- income -->
+            <label class="text-2xl  block" for="">Income: </label>
+            <input id="income-field" class="bg-green-400 p-1 text-zinc-900 text-xl text-center" type="text">
+            <!-- Expenses  -->
+            <h2 class="text-3xl font-bold text-pink-900 mx-16 mt-3">Expenses</h2>
+            <!-- Food  -->
+            <label class="text-2xl block mx-7" for="">Food:</label> 
+            <input id="food-field" class="bg-green-400 p-1 text-zinc-900 text-xl text-center" type="text">
+            <!-- Rent  -->
+            <label class="block text-2xl mx-7" for="">Rent:</label>
+            <input id="rent-field" class="bg-green-400 p-1 text-zinc-900 text-xl text-center" type="">
+             <!-- Clothes  -->
+             <label class="block text-2xl mx-7" for="">Clothes:</label>
+             <input id="clothes-field" class="bg-green-400 p-1 text-zinc-900 text-xl text-center" type="">
+             <!-- calculate button  -->
+             <button id="calculate-field" class="block bg-lime-400  p-2 rounded-lg mt-5 mx-16 w-48 text-2xl">Calculate</button>
+
+             <!-- total Expenses -->
+             <h5 class="text-3xl font-bold mt-3 mx-5 text-pink-900">Total Expenses: <span id="total-expenses">00</span></h5>
+             <!-- Balnace  -->
+             <h5 class="text-3xl font-bold mt-3 mx-16 text-pink-900">Balnace: <span id="balnace-field">00</span></h5>
+
+             <!-- save  -->
+             <label class="text-2xl mx-1" for="">Save:</label>
+             <input id="save-input-field" class="bg-green-400 w-24 p-1 text-zinc-900 text-xl text-center" type=""> <span class="text-2xl "> % </span>
+             <button id="save-button-field" class="bg-lime-400  p-1 rounded-lg mt-3 w-32 text-2xl">Save</button>
+
+             <!-- saving amount  -->
+             <h6 class="text-3xl font-bold mt-3 mx-7 text-pink-900">Saving Amount: <span id="save-amount-field">00</span></h6>
+             <!-- Remaining Balnace  -->
+             <h6 class="text-3xl font-bold mt-3 mx-4 text-pink-900">Remainig Balnace: <span id="remaining-text-value">00</span></h6>
+        </div>
+       </section>
+    </main>
+    <script src="js/utilitis.js"></script>
+    <script src="js/income.js"></script>
+    <script src="js/save.js"></script>
+</body>
+</html>
